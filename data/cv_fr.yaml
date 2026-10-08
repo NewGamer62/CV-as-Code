@@ -1,0 +1,106 @@
+# CV - Version Française
+# Source de vérité pour le CV en français
+
+lang: "fr"
+
+labels:
+  contact: "Contact"
+  birth_date: "Date de naissance"
+  skills_tech: "Compétences Techniques"
+  languages: "Langues"
+  other: "Autres Atouts"
+  profile: "Profil"
+  education: "Formation"
+  github_projects: "Projets & Réalisations (GitHub)"
+  experiences: "Expériences & Engagements"
+  repo_link: "→ Dépôt"
+  internal_proj: "(Projet privé)"
+  no_projects: "Aucun projet synchronisé pour le moment."
+
+profile:
+  name: "Noa Gaillard"
+  title: "Stage de Fin d'Études – BUT 3 Informatique"
+  summary: >
+    Étudiant en 3ème année de BUT Informatique à l'IUT de Calais (Grade Bac+2 / DUT validé, niveau technicien supérieur).
+    Spécialisé dans la conception, le développement et la validation d'applications. À la recherche d'un stage de
+    fin d'études pour concevoir des solutions performantes au sein d'une équipe de développement.
+  photo: "assets/profile.jpg"
+
+contact:
+  email: "noa.gaillard@laposte.net"
+  phone: "+33 7 71 16 11 96"
+  location: "Auxi-le-Château, France"
+  github: "https://github.com/NewGamer62"
+  address: "20, Résidence Commune de Paris, 62390 Auxi-le-Château"
+  birth_date: "02/10/2006"
+
+education:
+  - degree: "BUT Informatique – 3ème année (Conception & Développement)"
+    institution: "IUT de Calais"
+    period: "2024 – Présent"
+    details:
+      - "Niveau Technicien validé (DUT Informatique / 120 crédits ECTS)"
+      - "Parcours : Réalisation d'applications : conception, développement, validation"
+      - "Projets : Listing PyQt6 (catégories JSON), Plan de magasin avec calcul d'itinéraire optimal, Annuaire MVC en Python"
+
+  - degree: "Baccalauréat Général"
+    institution: "Lycée Albert Châtelet"
+    period: "2021 – 2024"
+    details:
+      - "Spécialités : Mathématiques, Numérique & Sciences Informatiques (NSI), Sciences de l'Ingénieur (SI)"
+      - "Options : Mathématiques Expertes & Cinéma-Audiovisuel"
+
+skills:
+  technical:
+    - category: "Langages"
+      items: ["Python", "Java", "TypeScript", "SQL", "HTML", "CSS"]
+    - category: "Frameworks & Outils"
+      items: ["React (notions)", "WordPress", "Git / GitHub Actions", "PHP (débutant)"]
+    - category: "Méthodologies & Concepts"
+      items: ["Architecture MVC", "Intégration d'API REST", "Bases de données relationnelles", "Responsive Design"]
+  languages:
+    - language: "Français"
+      level: "Natif"
+    - language: "Anglais"
+      level: "B2"
+    - language: "Allemand"
+      level: "A2"
+  other:
+    - "Permis B"
+    - "Certificat Prévention et Secours Civiques (PSC1)"
+    - "BAFA (Animation et encadrement d'équipe)"
+
+experiences:
+  - title: "Coordination d'événements étudiants"
+    organization: "Association étudiante"
+    period: "2024"
+    highlights:
+      - "Organisation logistique, gestion des flux et accueil du public"
+      - "Coordination au sein d'une équipe de bénévoles"
+
+github_sync:
+  username: "NewGamer62"
+  topic_filter: ""
+  include_repos:
+    - "Project206Saas"
+    - "HeatTrainer"
+    - "CV-as-Code"
+  exclude_repos: []
+  max_projects: 3
+
+repo_overrides:
+  Project206Saas:
+    name: "Project 206 SaaS"
+    description: "Plateforme SaaS modulaire conçue pour la gestion et l'automatisation de services."
+    language: "Fullstack"
+    is_private: true
+  HeatTrainer:
+    name: "Heat Trainer"
+    description: "Application d'entraînement interactif et de suivi d'exercices développée en TypeScript."
+    language: "TypeScript"
+    is_private: false
+  CV-as-Code:
+    name: "CV-as-Code"
+    description: "Pipeline CI/CD complet de génération automatisée de CV bilingue (Typst, Python, GitHub Actions)."
+    language: "Typst / Python"
+    is_private: false

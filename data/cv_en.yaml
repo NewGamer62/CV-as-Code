@@ -1,0 +1,106 @@
+# CV - English Version
+# Source of truth for the English CV
+
+lang: "en"
+
+labels:
+  contact: "Contact"
+  birth_date: "Date of Birth"
+  skills_tech: "Technical Skills"
+  languages: "Languages"
+  other: "Certifications & Other"
+  profile: "Profile"
+  education: "Education"
+  github_projects: "Projects & Open Source (GitHub)"
+  experiences: "Experience & Leadership"
+  repo_link: "→ Repository"
+  internal_proj: "(Private repo)"
+  no_projects: "No projects synced yet."
+
+profile:
+  name: "Noa Gaillard"
+  title: "End-of-Studies Internship – Computer Science (BUT 3)"
+  summary: >
+    3rd-year Computer Science student at IUT de Calais (Associate Degree / DUT validated, Certified Technician level).
+    Specialized in application design, development, and quality validation. Seeking an end-of-studies internship
+    to build robust, user-centric software solutions within an agile development team.
+  photo: "assets/profile.jpg"
+
+contact:
+  email: "noa.gaillard@laposte.net"
+  phone: "+33 7 71 16 11 96"
+  location: "Auxi-le-Château, France"
+  github: "https://github.com/NewGamer62"
+  address: "20, Résidence Commune de Paris, 62390 Auxi-le-Château, France"
+  birth_date: "02/10/2006"
+
+education:
+  - degree: "Bachelor of Science in Computer Science (BUT) – 3rd Year"
+    institution: "IUT de Calais"
+    period: "2024 – Present"
+    details:
+      - "Technician Degree Validated (DUT in Computer Science / 120 ECTS credits)"
+      - "Track: Application Design, Development and Validation"
+      - "Projects: PyQt6 product catalog (JSON categories), Store map with shortest-path routing, MVC Python directory system"
+
+  - degree: "General Baccalaureate"
+    institution: "Lycée Albert Châtelet"
+    period: "2021 – 2024"
+    details:
+      - "Majors: Mathematics, Computer Science (NSI), Engineering Science (SI)"
+      - "Options: Advanced Mathematics & Cinema-Audiovisual"
+
+skills:
+  technical:
+    - category: "Languages"
+      items: ["Python", "Java", "TypeScript", "SQL", "HTML", "CSS"]
+    - category: "Frameworks / Tools"
+      items: ["React (basics)", "WordPress", "Git / GitHub Actions", "PHP (beginner)"]
+    - category: "Concepts"
+      items: ["MVC Architecture", "REST API Integration", "Relational Databases", "Responsive Design"]
+  languages:
+    - language: "French"
+      level: "Native"
+    - language: "English"
+      level: "B2"
+    - language: "German"
+      level: "A2"
+  other:
+    - "Driving licence (B)"
+    - "PSC1 First Aid Certificate"
+    - "BAFA (Youth Activity Leader & Group Mentoring)"
+
+experiences:
+  - title: "Student Event Coordination"
+    organization: "Student Association"
+    period: "2024"
+    highlights:
+      - "Logistics planning, crowd management, and attendee welcoming"
+      - "Collaborated within a student volunteer team"
+
+github_sync:
+  username: "NewGamer62"
+  topic_filter: ""
+  include_repos:
+    - "Project206Saas"
+    - "HeatTrainer"
+    - "CV-as-Code"
+  exclude_repos: []
+  max_projects: 3
+
+repo_overrides:
+  Project206Saas:
+    name: "Project 206 SaaS"
+    description: "Modular SaaS platform designed for service management and workflow automation."
+    language: "Fullstack"
+    is_private: true
+  HeatTrainer:
+    name: "Heat Trainer"
+    description: "Interactive workout and athletic training tracking application built with TypeScript."
+    language: "TypeScript"
+    is_private: false
+  CV-as-Code:
+    name: "CV-as-Code"
+    description: "Automated CI/CD bilingual CV generation pipeline (Typst, Python, GitHub Actions)."
+    language: "Typst / Python"
+    is_private: false

@@ -1,0 +1,15 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.env
+.venv/
+env/
+venv/
+
+# Typst & Build outputs
+data/cv_computed*.json
+cv*_preview.png
+
+# Optionnel : si tu souhaites versionner les PDF compilés sur Git, commente les lignes ci-dessous
+# cv*.pdf

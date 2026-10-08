@@ -1,0 +1,70 @@
+name: Build & Publish CV
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - 'data/**'
+      - 'templates/**'
+      - 'scripts/**'
+      - 'assets/**'
+      - '.github/workflows/build-cv.yml'
+  schedule:
+    # Synchronisation hebdomadaire (chaque lundi à 06h00 UTC)
+    - cron: '0 6 * * 1'
+  workflow_dispatch: # Permet de lancer le build manuellement en 1 clic sur GitHub
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: 📥 Cloner le dépôt
+        uses: actions/checkout@v4
+
+      - name: 🐍 Configurer Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+          cache: 'pip'
+
+      - name: 📦 Installer les dépendances
+        run: pip install -r requirements.txt
+
+      - name: 🔄 Synchroniser GitHub & Compiler le CV (Typst)
+        env:
+          # Si un PAT_GITHUB est configuré dans les secrets, il est utilisé (accès repos privés).
+          # Sinon, fallback sur le GITHUB_TOKEN par défaut du runner.
+          PAT_GITHUB: ${{ secrets.PAT_GITHUB || secrets.GITHUB_TOKEN }}
+        run: python scripts/sync_and_build.py
+
+      - name: 📤 Sauvegarder les PDF en tant qu'Artifacts
+        uses: actions/upload-artifact@v4
+        with:
+          name: cv-pdfs
+          path: |
+            cv.pdf
+            cv_fr.pdf
+            cv_en.pdf
+          retention-days: 90
+
+      - name: 🏷️ Publier / Mettre à jour la Release GitHub
+        uses: softprops/action-gh-release@v2
+        if: github.ref == 'refs/heads/main'
+        with:
+          tag_name: latest
+          name: "Dernière version du CV (Automatisée)"
+          body: |
+            CV compilé automatiquement avec les derniers projets GitHub :
+            - [Version Française (cv_fr.pdf)](https://github.com/NewGamer62/CV-as-Code/releases/latest/download/cv_fr.pdf)
+            - [English Version (cv_en.pdf)](https://github.com/NewGamer62/CV-as-Code/releases/latest/download/cv_en.pdf)
+          files: |
+            cv.pdf
+            cv_fr.pdf
+            cv_en.pdf
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
