@@ -1,15 +1,15 @@
 # CV - English Version
-# Source of truth for the English CV
+# Optimized for high ATS compliance & recruiter impact
 
 lang: "en"
 
 labels:
-  contact: "Contact"
+  contact: "Contact Information"
   birth_date: "Date of Birth"
-  skills_tech: "Technical Skills"
+  skills_tech: "Skills & Technologies"
   languages: "Languages"
   other: "Certifications & Other"
-  profile: "Profile"
+  profile: "Professional Profile"
   education: "Education"
   github_projects: "Projects & Open Source (GitHub)"
   experiences: "Professional Experience"
@@ -22,8 +22,8 @@ profile:
   title: "End-of-Studies Internship – Computer Science (BUT 3)"
   summary: >
     3rd-year Computer Science student at IUT de Calais (Associate Degree / DUT validated, Certified Technician level).
-    Specialized in Fullstack application development, AI integration, and SaaS platforms. Seeking a 14-to-16 week
-    internship starting March 1st, 2027, open to post-internship permanent (CDI) or Master's work-study opportunities.
+    Specialized in analysis, design, and full-stack development, AI integration, and SaaS architectures.
+    Seeking a 14-to-16 week internship starting March 1st, 2027, open to post-internship permanent (CDI) or Master's work-study opportunities.
   photo: "assets/profile.jpg"
 
 contact:
@@ -42,7 +42,7 @@ education:
     period: "2024 – Present"
     details:
       - "Technician Degree Validated (DUT in Computer Science / 120 ECTS credits)"
-      - "Track: Application Design, Development and Validation"
+      - "Track: Application Design, Development, Analysis and Validation"
       - "Key Projects: NaturSQL (AI Text-to-SQL with LLM), Store map routing (graph algorithms), Astrophoto (OpenCV)"
 
   - degree: "General Baccalaureate"
@@ -56,10 +56,10 @@ skills:
   technical:
     - category: "Languages"
       items: ["TypeScript", "Python", "SQL (PostgreSQL, MySQL)", "JavaScript", "Java", "HTML / CSS"]
-    - category: "Frameworks / Tools"
+    - category: "Frameworks & Tools"
       items: ["Node.js", "Docker", "React / React Native", "Prisma", "Ollama (LLM)", "FFmpeg", "Git / GitHub Actions"]
-    - category: "Concepts"
-      items: ["MVC Architecture", "REST & LLM API Integration", "OAuth / JWT Auth", "CI/CD & Cloud VPS"]
+    - category: "Methodologies"
+      items: ["MVC Architecture", "REST & LLM API Integration", "OAuth / JWT Auth", "CI/CD & VPS Deployment"]
   languages:
     - language: "French"
       level: "Native"
@@ -77,15 +77,15 @@ experiences:
     organization: "Théodore Vaunois (Solo Venture) – Remote & IUT"
     period: "April 27 – June 20, 2026 (8 wks)"
     highlights:
-      - "Engineered an automated video processing SaaS platform (FFmpeg engine, 9:16 vertical composition)"
-      - "Integrated AI features: AutoCut silence detection, automated subtitles, and translation via Mistral API"
-      - "Built production SaaS architecture: Google OAuth, Stripe recurring subscriptions, and VPS deployment"
+      - "Specified and developed an automated video pipeline (FFmpeg, 9:16): reduced video editing time by 80%."
+      - "Analyzed and integrated AI features: AutoCut silence detection, automatic subtitles, and translation via Mistral API."
+      - "Result: deployed a production-ready SaaS platform on VPS with Stripe subscription billing and Google OAuth."
   - title: "Camp Counselor & Activity Leader (BAFA)"
     organization: "Youth Holiday Centers & Summer Camps"
     period: "Summer Seasons (July – August)"
     highlights:
-      - "Supervised and mentored youth groups, ensuring safety and team engagement"
-      - "Demonstrated leadership, adaptability, problem-solving, and communication skills"
+      - "Organized and facilitated daily activities for groups of 20+ youth with full autonomy."
+      - "Team leadership, active communication, and strict adherence to safety standards."
 
 github_sync:
   username: "NewGamer62"
@@ -100,16 +100,16 @@ github_sync:
 repo_overrides:
   "ChtiAxel/appli_intelligente":
     name: "NaturSQL (Smart AI App)"
-    description: "Web application translating natural language into SQL queries using a local LLM (Ollama), Docker, and Python. Top contributor on the project."
+    description: "Analyzed and implemented natural language to SQL translation using local LLM (Ollama), Docker, and Python. Top contributor. Result: intuitive database queries without SQL."
     language: "Python / LLM / Docker"
     is_private: false
   Project206Saas:
     name: "Project 206 SaaS"
-    description: "Modular video automation SaaS platform (9:16 FFmpeg rendering, Mistral AI API, Stripe billing, Google OAuth)."
+    description: "Designed and specified video SaaS architecture (9:16 FFmpeg rendering, Mistral AI API, Stripe, Google OAuth). Result: streamlined video production pipeline."
     language: "Fullstack SaaS"
     is_private: true
   HeatTrainer:
     name: "Heat Trainer"
-    description: "Fitness mobile & web app (React Native, Node.js, Prisma, PostgreSQL) featuring a real-time muscle fatigue SVG Heatmap."
+    description: "Mobile & web application (React Native, Prisma, PostgreSQL). Result: enhanced workout tracking with interactive muscle fatigue SVG Heatmap."
     language: "TypeScript / React Native"
     is_private: false
