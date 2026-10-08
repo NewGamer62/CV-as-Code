@@ -12,7 +12,7 @@ labels:
   profile: "Profil"
   education: "Formation"
   github_projects: "Projets & Réalisations (GitHub)"
-  experiences: "Expériences & Engagements"
+  experiences: "Expériences Professionnelles"
   repo_link: "→ Dépôt"
   internal_proj: "(Projet privé)"
   no_projects: "Aucun projet synchronisé pour le moment."
@@ -21,9 +21,10 @@ profile:
   name: "Noa Gaillard"
   title: "Stage de Fin d'Études – BUT 3 Informatique"
   summary: >
-    Étudiant en 3ème année de BUT Informatique à l'IUT de Calais (Grade Bac+2 / DUT validé, niveau technicien supérieur).
-    Spécialisé dans la conception, le développement et la validation d'applications. À la recherche d'un stage de
-    fin d'études pour concevoir des solutions performantes au sein d'une équipe de développement.
+    Étudiant en 3ème année de BUT Informatique à l'IUT de Calais (Grade Bac+2 / DUT validé, niveau technicien).
+    Spécialisé en conception et développement d'applications (Python, TypeScript, SQL, intégration IA/LLM).
+    À la recherche d'un stage de fin d'études de 14 à 16 semaines pour concevoir et développer des solutions
+    logicielles au sein d'une équipe technique stimulante.
   photo: "assets/profile.jpg"
 
 contact:
@@ -35,29 +36,29 @@ contact:
   birth_date: "02/10/2006"
 
 education:
-  - degree: "BUT Informatique – 3ème année (Conception & Développement)"
+  - degree: "BUT Informatique – 3ème année (Conception & Dév.)"
     institution: "IUT de Calais"
     period: "2024 – Présent"
     details:
       - "Niveau Technicien validé (DUT Informatique / 120 crédits ECTS)"
       - "Parcours : Réalisation d'applications : conception, développement, validation"
-      - "Projets : Listing PyQt6 (catégories JSON), Plan de magasin avec calcul d'itinéraire optimal, Annuaire MVC en Python"
+      - "Projets : NaturSQL (IA Text-to-SQL), Listing PyQt6, Itinéraire optimal (graphes), Annuaire MVC"
 
   - degree: "Baccalauréat Général"
     institution: "Lycée Albert Châtelet"
     period: "2021 – 2024"
     details:
-      - "Spécialités : Mathématiques, Numérique & Sciences Informatiques (NSI), Sciences de l'Ingénieur (SI)"
+      - "Spécialités : Mathématiques, NSI (Numérique & Sciences Info), Sciences de l'Ingénieur (SI)"
       - "Options : Mathématiques Expertes & Cinéma-Audiovisuel"
 
 skills:
   technical:
     - category: "Langages"
-      items: ["Python", "Java", "TypeScript", "SQL", "HTML", "CSS"]
+      items: ["Python", "TypeScript", "JavaScript", "Java", "SQL", "HTML / CSS"]
     - category: "Frameworks & Outils"
-      items: ["React (notions)", "WordPress", "Git / GitHub Actions", "PHP (débutant)"]
+      items: ["Docker", "Git / GitHub Actions", "React", "Ollama (LLM)", "PyQt6"]
     - category: "Méthodologies & Concepts"
-      items: ["Architecture MVC", "Intégration d'API REST", "Bases de données relationnelles", "Responsive Design"]
+      items: ["Architecture MVC", "Intégration LLM / API REST", "Bases de données relationnelles", "CI/CD"]
   languages:
     - language: "Français"
       level: "Natif"
@@ -68,27 +69,37 @@ skills:
   other:
     - "Permis B"
     - "Certificat Prévention et Secours Civiques (PSC1)"
-    - "BAFA (Animation et encadrement d'équipe)"
+    - "BAFA (Animation et gestion d'équipe)"
 
 experiences:
+  - title: "Stage Développeur / Informatique (BUT 2)"
+    organization: "[À préciser : Entreprise / Structure]"
+    period: "27 Avril – 20 Juin 2026 (8 sem.)"
+    highlights:
+      - "Conception, développement et maintenance logicielle"
+      - "Travail en autonomie et intégration des bonnes pratiques de développement"
   - title: "Coordination d'événements étudiants"
     organization: "Association étudiante"
     period: "2024"
     highlights:
       - "Organisation logistique, gestion des flux et accueil du public"
-      - "Coordination au sein d'une équipe de bénévoles"
 
 github_sync:
   username: "NewGamer62"
   topic_filter: ""
   include_repos:
+    - "ChtiAxel/appli_intelligente"
     - "Project206Saas"
     - "HeatTrainer"
-    - "CV-as-Code"
   exclude_repos: []
   max_projects: 3
 
 repo_overrides:
+  "ChtiAxel/appli_intelligente":
+    name: "NaturSQL (Application Intelligente)"
+    description: "Application web Text-to-SQL intégrant un LLM local (Ollama), Docker et Python pour traduire le français en requêtes SQL. Top contributeur du projet."
+    language: "Python / LLM / Docker"
+    is_private: false
   Project206Saas:
     name: "Project 206 SaaS"
     description: "Plateforme SaaS modulaire conçue pour la gestion et l'automatisation de services."
@@ -96,11 +107,6 @@ repo_overrides:
     is_private: true
   HeatTrainer:
     name: "Heat Trainer"
-    description: "Application d'entraînement interactif et de suivi d'exercices développée en TypeScript."
+    description: "Application interactive d'entraînement et de suivi d'exercices sportifs développée en TypeScript."
     language: "TypeScript"
-    is_private: false
-  CV-as-Code:
-    name: "CV-as-Code"
-    description: "Pipeline CI/CD complet de génération automatisée de CV bilingue (Typst, Python, GitHub Actions)."
-    language: "Typst / Python"
     is_private: false

@@ -35,12 +35,18 @@ def fetch_github_projects(config):
     projects = []
     seen_names = set()
 
-    # 1. Récupération des dépôts explicitement listés (notamment les dépôts privés)
-    for repo_name in include_repos:
-        if repo_name in exclude_repos or repo_name in seen_names:
+    # 1. Récupération des dépôts explicitement listés (notamment les dépôts privés ou externes)
+    for repo_entry in include_repos:
+        if repo_entry in exclude_repos or repo_entry in seen_names:
             continue
 
-        url = f"https://api.github.com/repos/{username}/{repo_name}"
+        if "/" in repo_entry:
+            url = f"https://api.github.com/repos/{repo_entry}"
+            repo_name = repo_entry.split("/")[-1]
+        else:
+            url = f"https://api.github.com/repos/{username}/{repo_entry}"
+            repo_name = repo_entry
+
         proj_data = None
 
         try:
@@ -52,24 +58,25 @@ def fetch_github_projects(config):
         except Exception as e:
             print(f"[WARN] Erreur lors de la requête pour '{repo_name}': {e}")
 
-        # Si le repo est privé et pas accessible sans token en local, ou si on a un override
-        if not proj_data and repo_name in overrides:
-            ov = overrides[repo_name]
+        # Recherche d'une éventuelle surcharge (clé owner/repo ou repo_name)
+        ov = overrides.get(repo_entry) or overrides.get(repo_name)
+
+        # Si le repo n'est pas accessible sans token, ou si on a un override
+        if not proj_data and ov:
             proj_data = {
                 "name": ov.get("name", repo_name),
                 "raw_name": repo_name,
                 "description": ov.get("description", "Projet de développement logiciel."),
                 "language": ov.get("language", "Code"),
-                "url": f"https://github.com/{username}/{repo_name}",
+                "url": f"https://github.com/{repo_entry if '/' in repo_entry else f'{username}/{repo_name}'}",
                 "stars": 0,
-                "is_private": ov.get("is_private", True),
+                "is_private": ov.get("is_private", False),
                 "topics": [],
             }
 
         if proj_data:
             # Application des surcharges si renseignées
-            if repo_name in overrides:
-                ov = overrides[repo_name]
+            if ov:
                 if ov.get("name"):
                     proj_data["name"] = ov["name"]
                 if ov.get("description"):
@@ -80,7 +87,7 @@ def fetch_github_projects(config):
                     proj_data["is_private"] = ov["is_private"]
 
             projects.append(proj_data)
-            seen_names.add(repo_name)
+            seen_names.add(repo_entry)
 
     # 2. Récupération des dépôts complémentaires par topic / récence
     if len(projects) < max_projects:
