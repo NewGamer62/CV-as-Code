@@ -22,9 +22,9 @@ profile:
   title: "Stage de Fin d'Études – BUT 3 Informatique"
   summary: >
     Étudiant en 3ème année de BUT Informatique à l'IUT de Calais (Grade Bac+2 / DUT validé, niveau technicien).
-    Spécialisé en conception et développement d'applications (Python, TypeScript, SQL, intégration IA/LLM).
-    À la recherche d'un stage de fin d'études de 14 à 16 semaines pour concevoir et développer des solutions
-    logicielles au sein d'une équipe technique stimulante.
+    Spécialisé en conception et développement d'applications Fullstack, intégration IA et SaaS.
+    À la recherche d'un stage de fin d'études de 14 à 16 semaines dès le 1er mars 2027, ouvert aux opportunités
+    de poursuite en CDI ou alternance Master.
   photo: "assets/profile.jpg"
 
 contact:
@@ -32,6 +32,8 @@ contact:
   phone: "+33 7 71 16 11 96"
   location: "Auxi-le-Château, France"
   github: "https://github.com/NewGamer62"
+  linkedin: "https://www.linkedin.com/in/noa-gaillard-a7484132b/"
+  portfolio: "https://ecv.jrcan.dev/noagaillard"
   address: "20, Résidence Commune de Paris, 62390 Auxi-le-Château"
   birth_date: "02/10/2006"
 
@@ -42,7 +44,7 @@ education:
     details:
       - "Niveau Technicien validé (DUT Informatique / 120 crédits ECTS)"
       - "Parcours : Réalisation d'applications : conception, développement, validation"
-      - "Projets : NaturSQL (IA Text-to-SQL), Listing PyQt6, Itinéraire optimal (graphes), Annuaire MVC"
+      - "Projets : NaturSQL (IA Text-to-SQL avec LLM), Éditeur de magasin (graphes & itinéraire optimal), Astrophoto (OpenCV)"
 
   - degree: "Baccalauréat Général"
     institution: "Lycée Albert Châtelet"
@@ -54,11 +56,11 @@ education:
 skills:
   technical:
     - category: "Langages"
-      items: ["Python", "TypeScript", "JavaScript", "Java", "SQL", "HTML / CSS"]
+      items: ["TypeScript", "Python", "SQL (PostgreSQL, MySQL)", "JavaScript", "Java", "HTML / CSS"]
     - category: "Frameworks & Outils"
-      items: ["Docker", "Git / GitHub Actions", "React", "Ollama (LLM)", "PyQt6"]
+      items: ["Node.js", "Docker", "React / React Native", "Prisma", "Ollama (LLM)", "FFmpeg", "Git / GitHub Actions"]
     - category: "Méthodologies & Concepts"
-      items: ["Architecture MVC", "Intégration LLM / API REST", "Bases de données relationnelles", "CI/CD"]
+      items: ["Architecture MVC", "Intégration API REST & LLM", "Authentification OAuth / JWT", "CI/CD & VPS"]
   languages:
     - language: "Français"
       level: "Natif"
@@ -69,15 +71,16 @@ skills:
   other:
     - "Permis B"
     - "Certificat Prévention et Secours Civiques (PSC1)"
-    - "BAFA (Animation et gestion d'équipe)"
+    - "BAFA (Animation et encadrement d'équipe)"
 
 experiences:
-  - title: "Stage Développeur / Informatique (BUT 2)"
-    organization: "[À préciser : Entreprise / Structure]"
+  - title: "Développeur Fullstack SaaS (Stage BUT 2)"
+    organization: "Théodore Vaunois (Auto-entreprise) – Distanciel & IUT"
     period: "27 Avril – 20 Juin 2026 (8 sem.)"
     highlights:
-      - "Conception, développement et maintenance logicielle"
-      - "Travail en autonomie et intégration des bonnes pratiques de développement"
+      - "Conception et développement d'un SaaS de montage vidéo automatisé (FFmpeg, composition 9:16)"
+      - "Intégration IA : AutoCut (détection des silences), sous-titres et traduction via API Mistral"
+      - "Architecture SaaS : Google OAuth, abonnements Stripe et déploiement sur VPS en autonomie"
   - title: "Coordination d'événements étudiants"
     organization: "Association étudiante"
     period: "2024"
@@ -97,16 +100,16 @@ github_sync:
 repo_overrides:
   "ChtiAxel/appli_intelligente":
     name: "NaturSQL (Application Intelligente)"
-    description: "Application web Text-to-SQL intégrant un LLM local (Ollama), Docker et Python pour traduire le français en requêtes SQL. Top contributeur du projet."
+    description: "Application web Text-to-SQL traduisant le langage naturel en requêtes SQL via un LLM local (Ollama), Docker et Python. Top contributeur du projet."
     language: "Python / LLM / Docker"
     is_private: false
   Project206Saas:
     name: "Project 206 SaaS"
-    description: "Plateforme SaaS modulaire conçue pour la gestion et l'automatisation de services."
-    language: "Fullstack"
+    description: "Plateforme SaaS modulaire d'automatisation de montage vidéo (composition 9:16, FFmpeg, API Mistral, Stripe, Google OAuth)."
+    language: "Fullstack SaaS"
     is_private: true
   HeatTrainer:
     name: "Heat Trainer"
-    description: "Application interactive d'entraînement et de suivi d'exercices sportifs développée en TypeScript."
-    language: "TypeScript"
+    description: "Application de musculation (React Native, Node.js, Prisma, PostgreSQL) avec Heatmap SVG interactive de fatigue musculaire."
+    language: "TypeScript / React Native"
     is_private: false
