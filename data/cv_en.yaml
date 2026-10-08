@@ -70,7 +70,7 @@ skills:
   other:
     - "Driving licence (B)"
     - "PSC1 First Aid Certificate"
-    - "BAFA (Youth Activity Leader & Group Mentoring)"
+    - "BAFA Youth Leader Certificate"
 
 experiences:
   - title: "Fullstack SaaS Developer Intern (BUT 2)"
@@ -80,11 +80,12 @@ experiences:
       - "Engineered an automated video processing SaaS platform (FFmpeg engine, 9:16 vertical composition)"
       - "Integrated AI features: AutoCut silence detection, automated subtitles, and translation via Mistral API"
       - "Built production SaaS architecture: Google OAuth, Stripe recurring subscriptions, and VPS deployment"
-  - title: "Student Event Coordination"
-    organization: "Student Association"
-    period: "2024"
+  - title: "Camp Counselor & Activity Leader (BAFA)"
+    organization: "Youth Holiday Centers & Summer Camps"
+    period: "Summer Seasons (July – August)"
     highlights:
-      - "Logistics planning, crowd management, and attendee welcoming"
+      - "Supervised and mentored youth groups, ensuring safety and team engagement"
+      - "Demonstrated leadership, adaptability, problem-solving, and communication skills"
 
 github_sync:
   username: "NewGamer62"

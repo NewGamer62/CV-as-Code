@@ -71,7 +71,7 @@ skills:
   other:
     - "Permis B"
     - "Certificat Prévention et Secours Civiques (PSC1)"
-    - "BAFA (Animation et encadrement d'équipe)"
+    - "BAFA complet"
 
 experiences:
   - title: "Développeur Fullstack SaaS (Stage BUT 2)"
@@ -81,11 +81,12 @@ experiences:
       - "Conception et développement d'un SaaS de montage vidéo automatisé (FFmpeg, composition 9:16)"
       - "Intégration IA : AutoCut (détection des silences), sous-titres et traduction via API Mistral"
       - "Architecture SaaS : Google OAuth, abonnements Stripe et déploiement sur VPS en autonomie"
-  - title: "Coordination d'événements étudiants"
-    organization: "Association étudiante"
-    period: "2024"
+  - title: "Animateur en séjours de vacances (BAFA)"
+    organization: "Accueils collectifs de mineurs / Séjours estivaux"
+    period: "Saisons estivales (Juillet – Août)"
     highlights:
-      - "Organisation logistique, gestion des flux et accueil du public"
+      - "Encadrement, animation et gestion de groupes en autonomie"
+      - "Travail en équipe pédagogique, sens des responsabilités et communication"
 
 github_sync:
   username: "NewGamer62"

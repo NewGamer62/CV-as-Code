@@ -171,8 +171,13 @@ def build_version(lang: str):
 
     # Si c'est la version FR, on crée aussi cv.pdf par défaut
     if lang == "fr":
-        shutil.copy(output_pdf, BASE_DIR / "cv.pdf")
-        print("-> Copie par défaut : cv.pdf mis à jour.")
+        try:
+            shutil.copy(output_pdf, BASE_DIR / "cv.pdf")
+            print("-> Copie par défaut : cv.pdf mis à jour.")
+        except PermissionError:
+            print("[INFO] cv.pdf est actuellement ouvert dans un lecteur de document (copie différée).")
+        except Exception as e:
+            print(f"[WARN] Impossible de copier cv.pdf: {e}")
 
 
 def main():
