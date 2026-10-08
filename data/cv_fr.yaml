@@ -60,7 +60,7 @@ skills:
     - category: "Frameworks & Outils"
       items: ["Node.js", "Docker", "React / React Native", "Prisma", "Ollama (LLM)", "FFmpeg", "Git / GitHub Actions"]
     - category: "Méthodologies"
-      items: ["Architecture MVC", "Intégration API REST & LLM", "Authentification OAuth / JWT", "CI/CD & Déploiement VPS"]
+      items: ["Architecture MVC", "Intégration API REST & LLM", "Authentification OAuth / JWT", "CI/CD & Synthèse technique"]
   languages:
     - language: "Français"
       level: "Natif"
@@ -78,14 +78,14 @@ experiences:
     organization: "Théodore Vaunois (Auto-entreprise) – Distanciel & IUT"
     period: "27 Avril – 20 Juin 2026 (8 sem.)"
     highlights:
-      - "Spécification et développement d'un pipeline vidéo automatisé (FFmpeg, 9:16) : réduction de 80% du temps de montage."
+      - "Cahier des charges spécifié et développement du pipeline vidéo (FFmpeg, 9:16) : réduction de 80% du temps de montage."
       - "Analyse et intégration IA : détection des silences (AutoCut) et sous-titres automatiques via l'API Mistral."
       - "Résultat : architecture SaaS complète déployée sur VPS avec paiement Stripe et authentification Google OAuth."
   - title: "Animateur en séjours de vacances (BAFA)"
     organization: "Accueils collectifs de mineurs / Séjours estivaux"
     period: "Saisons estivales (Juillet – Août)"
     highlights:
-      - "Organisation et animation d'activités quotidiennes pour des groupes de 20+ jeunes en autonomie."
+      - "Organisation et animation d'activités pour des groupes de 20+ jeunes avec synthèse des bilans d'équipe."
       - "Gestion d'équipe pédagogique, communication active et application rigoureuse des normes de sécurité."
 
 github_sync:

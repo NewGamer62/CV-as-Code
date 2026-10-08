@@ -45,7 +45,6 @@
         fill: primary,
         weight: "bold",
         size: 9pt,
-        tracking: 1.2pt,
         upper(title)
       )
     ]
@@ -87,7 +86,6 @@
     #text(
       size: 20pt,
       weight: "bold",
-      tracking: 2.5pt,
       fill: primary,
       upper(data.profile.name)
     )
@@ -95,7 +93,6 @@
     #text(
       size: 11pt,
       weight: "medium",
-      tracking: 1.5pt,
       fill: accent,
       upper(data.profile.title)
     )
