@@ -11,5 +11,12 @@ venv/
 data/cv_computed*.json
 cv*_preview.png
 
+# CVs locaux spécifiques (Intermarché, Créateurs, etc.)
+*intermarche*
+*createurs*
+data/local/
+dist/
+scripts/build_custom_cv.py
+
 # Optionnel : si tu souhaites versionner les PDF compilés sur Git, commente les lignes ci-dessous
 # cv*.pdf
