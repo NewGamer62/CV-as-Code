@@ -19,10 +19,10 @@ labels:
 
 profile:
   name: "Noa Gaillard"
-  title: "End-of-Studies Internship – Computer Science (BUT 3)"
+  title: "Fullstack Software Engineer & AI Integration – BUT 3 Internship"
   summary: >
     3rd-year Computer Science student at IUT de Calais (Associate Degree / DUT validated, Certified Technician level).
-    Specialized in analysis, design, and full-stack development, AI integration, and SaaS architectures.
+    Specialized in full-stack software architecture, sovereign AI integration (local LLM Ollama), and modern polyglot persistence.
     Seeking a 14-to-16 week internship starting March 1st, 2027, open to post-internship permanent (CDI) or Master's work-study opportunities.
   photo: "assets/profile.jpg"
 
@@ -55,11 +55,13 @@ education:
 skills:
   technical:
     - category: "Languages"
-      items: ["TypeScript", "Python", "SQL (PostgreSQL, MySQL)", "JavaScript", "Java", "HTML / CSS"]
-    - category: "Frameworks & Tools"
-      items: ["Node.js", "Docker", "React / React Native", "Prisma", "Ollama (LLM)", "FFmpeg", "Git / GitHub Actions"]
-    - category: "Methodologies"
-      items: ["MVC Architecture", "REST & LLM API Integration", "OAuth / JWT Auth", "CI/CD & VPS Deployment"]
+      items: ["TypeScript", "Python", "C# (.NET 10)", "SQL", "Dart", "Java", "HTML / CSS"]
+    - category: "Frameworks & Backend"
+      items: ["Node.js", "Docker", "React / Next.js", "Prisma", "Ollama (LLM)", "FFmpeg"]
+    - category: "Data & Persistence"
+      items: ["PostgreSQL", "MongoDB", "Redis", "Neo4j", "MariaDB"]
+    - category: "Methodologies & DevOps"
+      items: ["MVC Architecture & Clean Code", "REST APIs", "CI/CD & Git / GitHub Actions", "OAuth / JWT Auth"]
   languages:
     - language: "French"
       level: "Native"
@@ -93,7 +95,7 @@ github_sync:
   include_repos:
     - "ChtiAxel/appli_intelligente"
     - "Project206Saas"
-    - "HeatTrainer"
+    - "pixelHub"
   exclude_repos: []
   max_projects: 3
 
@@ -108,8 +110,8 @@ repo_overrides:
     description: "Designed and specified video SaaS architecture (9:16 FFmpeg rendering, Mistral AI API, Stripe, Google OAuth). Result: streamlined video production pipeline."
     language: "Fullstack SaaS"
     is_private: true
-  HeatTrainer:
-    name: "Heat Trainer"
-    description: "Mobile & web application (React Native, Prisma, PostgreSQL). Result: enhanced workout tracking with interactive muscle fatigue SVG Heatmap."
-    language: "TypeScript / React Native"
+  pixelHub:
+    name: "PixelHub (Polyglot Persistence)"
+    description: "Polyglot backend architecture in C# .NET 10 combining 4 database paradigms (PostgreSQL, MongoDB, Redis, Neo4j) and Docker. Result: scalable multi-model persistence platform."
+    language: "C# .NET 10 / NoSQL"
     is_private: false

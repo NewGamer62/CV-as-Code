@@ -19,12 +19,12 @@ labels:
 
 profile:
   name: "Noa Gaillard"
-  title: "Stage de Fin d'Études – BUT 3 Informatique"
+  title: "Concepteur Développeur Fullstack & Intégration IA – Stage BUT 3"
   summary: >
     Étudiant en 3ème année de BUT Informatique à l'IUT de Calais (Grade Bac+2 / DUT validé, niveau technicien).
-    Spécialisé en analyse, conception et développement d'applications Fullstack, intégration d'IA et plateformes SaaS.
+    Spécialisé en conception logicielle Fullstack, intégration d'IA souveraine (LLM local Ollama) et persistance moderne polyglotte.
     À la recherche d'un stage de fin d'études conventionné de 14 à 16 semaines dès le 1er mars 2027 pour concevoir
-    des solutions logicielles performantes, avec perspective de poursuite en CDI ou alternance Master.
+    des architectures logicielles performantes, avec perspective de poursuite en CDI ou alternance Master.
   photo: "assets/profile.jpg"
 
 contact:
@@ -56,11 +56,13 @@ education:
 skills:
   technical:
     - category: "Langages"
-      items: ["TypeScript", "Python", "SQL (PostgreSQL, MySQL)", "JavaScript", "Java", "HTML / CSS"]
-    - category: "Frameworks & Outils"
-      items: ["Node.js", "Docker", "React / React Native", "Prisma", "Ollama (LLM)", "FFmpeg", "Git / GitHub Actions"]
-    - category: "Méthodologies"
-      items: ["Architecture MVC", "Intégration API REST & LLM", "Authentification OAuth / JWT", "CI/CD & Synthèse technique"]
+      items: ["TypeScript", "Python", "C# (.NET 10)", "SQL", "Dart", "Java", "HTML / CSS"]
+    - category: "Frameworks & Backend"
+      items: ["Node.js", "Docker", "React / Next.js", "Prisma", "Ollama (LLM)", "FFmpeg"]
+    - category: "Données & Persistance"
+      items: ["PostgreSQL", "MongoDB", "Redis", "Neo4j", "MariaDB"]
+    - category: "Méthodologies & DevOps"
+      items: ["Architecture MVC & Clean Code", "APIs REST", "CI/CD & Git / GitHub Actions", "Authentification OAuth / JWT"]
   languages:
     - language: "Français"
       level: "Natif"
@@ -94,7 +96,7 @@ github_sync:
   include_repos:
     - "ChtiAxel/appli_intelligente"
     - "Project206Saas"
-    - "HeatTrainer"
+    - "pixelHub"
   exclude_repos: []
   max_projects: 3
 
@@ -109,8 +111,8 @@ repo_overrides:
     description: "Conception et spécification d'une plateforme SaaS vidéo (composition 9:16, FFmpeg, API Mistral, Stripe, Google OAuth). Résultat : flux de production optimisé."
     language: "Fullstack SaaS"
     is_private: true
-  HeatTrainer:
-    name: "Heat Trainer"
-    description: "Application mobile & web (React Native, Prisma, PostgreSQL). Résultat : amélioration du suivi d'entraînement via une Heatmap SVG interactive de fatigue musculaire."
-    language: "TypeScript / React Native"
+  pixelHub:
+    name: "PixelHub (Persistance Polyglotte)"
+    description: "Plateforme backend d'architecture polyglotte en C# .NET 10 combinant 4 paradigmes de bases de données (PostgreSQL, MongoDB, Redis, Neo4j) et Docker. Résultat : persistance multi-modèle scalable."
+    language: "C# .NET 10 / NoSQL"
     is_private: false
